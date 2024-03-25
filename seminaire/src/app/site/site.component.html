@@ -1,1 +1,60 @@
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Séminaires</title>
+</head>
+<body>
+<header>
+    <h1>Séminaires</h1>
+
+<div class="logo_a_droite">
+    <button class="connexion-button">
+        <img src="connexion.png" alt="Connexion">
+    </button>
+    <img class="logo" src="logo2.png" alt="Logo"> 
+    <button class="favoris-button" type="button" >
+        <img src="favoris.png" alt="Favoris">
+    </button>
+    <nav>
+        <ul>
+            <li class="menu-deroulant">
+                <a href="#"><img class="logo_menu" src="menu4.png" alt="Menu"></a>
+                <ul class="sous-menu">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Réalisations</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Contactez-nous</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+</header>
+<div class="option">
+    <div class="trier">
+        <label for="monselect">Trié:</label>
+        <select class="monselect">
+            <option value="recent" selected>Date la plus récente</option>
+            <option value="ancien">Date la moins récente</option>
+            <option value="domaine">Domaine</option>
+        </select>
+    </div>
+    <div class="Domaine">
+        <label for="monselect2">Domaine:</label>
+        <select class="monselect2">
+            <option value="recent" selected>Math</option>
+            <option value="ancien">physique</option>
+            <option value="domaine">Domaine</option>
+        </select>
+    </div>
+</div>
 <p>site works!</p>
+<h2>{{ title }}</h2>
+<p>Mis en ligne le {{ createdDate }}</p>
+<p>{{ description }}</p>
+<p>🤌 {{ snaps }}</p>
+</body>
+
+
+

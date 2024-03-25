@@ -12,3 +12,4 @@ import { SiteComponent } from './site/site.component';
 export class AppComponent {
   title = 'seminaire';
 }
+
