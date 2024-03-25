@@ -1,4 +1,5 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit,Input } from '@angular/core';
+import { Seminaire} from '../models/site_models';
 
 @Component({
   selector: 'app-site',
@@ -7,18 +8,9 @@ import { Component,OnInit } from '@angular/core';
   templateUrl: './site.component.html',
   styleUrl: './site.component.scss'
 })
-export class SiteComponent implements OnInit{
-  titre!: string;
-  date!: Date;
-  intervenant!: String;
-  lieu!: string;
-  resume!:string
+export class SiteComponent {
+  @Input() seminaire!:Seminaire;
   
-  ngOnInit() {
-    this.titre = "Séminaire sur les Nouvelles Technologies";
-    this.date = new Date();
-    this.intervenant = "Dr. Élodie Dubois (Université Aix-Marseille)";
-    this.lieu = "Salle 301, Bâtiment B, Campus Saint-Charles, Marseille";
-    this.resume = "Exploration des dernières avancées en intelligence artificielle";
-  }
+
+  
 }
