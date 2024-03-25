@@ -8,15 +8,17 @@ import { Component,OnInit } from '@angular/core';
   styleUrl: './site.component.scss'
 })
 export class SiteComponent implements OnInit{
-  title!: string;
-  description!: string;
-  createdDate!: Date;
-  snaps!: number;
+  titre!: string;
+  date!: Date;
+  intervenant!: String;
+  lieu!: string;
+  resume!:string
   
   ngOnInit() {
-    this.title = 'Archibald';
-    this.description = 'Mon meilleur ami depuis tout petit !';
-    this.createdDate = new Date();
-    this.snaps = 6;
+    this.titre = "Séminaire sur les Nouvelles Technologies";
+    this.date = new Date();
+    this.intervenant = "Dr. Élodie Dubois (Université Aix-Marseille)";
+    this.lieu = "Salle 301, Bâtiment B, Campus Saint-Charles, Marseille";
+    this.resume = "Exploration des dernières avancées en intelligence artificielle";
   }
 }
