@@ -12,7 +12,7 @@
     <button class="connexion-button">
         <img src="../img/connexion.png" alt="Connexion">
     </button>
-    <img class="logo" src="../img/logo2.png" alt="Logo"> 
+    <img src="./img/logo2.png"/>
     <button class="favoris-button" type="button" >
         <img src="favoris.png" alt="Favoris">
     </button>
@@ -49,11 +49,11 @@
         </select>
     </div>
 </div>
-<h2>{{ seminaire.titre }}</h2>
-<p>Mis en ligne le {{seminaire.date}}</p>
-<p>intervenant:{{ seminaire.intervenant }}</p>
-<p>lieu {{ seminaire.lieu }}</p>
-<p>resume {{ seminaire.resume }}</p>
+<h2>{{ seminaire.titre | uppercase }}</h2>
+<p>Mis en ligne le {{seminaire.date  | date :'longDate'}}</p>
+<p>Intervenant:{{ seminaire.intervenant | titlecase }}</p>
+<p>Lieu : {{ seminaire.lieu }}</p>
+<p>Résume : {{ seminaire.resume }}</p>
 </body>
 
 

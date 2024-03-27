@@ -2,12 +2,12 @@ import { Component,OnInit,Input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SiteComponent } from './site/site_component';
 import { Seminaire } from './models/site_models';
-import { CommonModule } from '@angular/common';
+import { CommonModule,DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,SiteComponent,CommonModule],
+  imports: [RouterOutlet,SiteComponent,CommonModule,DatePipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -40,4 +40,6 @@ export class AppComponent implements OnInit {
       }
     ];
   }
+
 }
+
