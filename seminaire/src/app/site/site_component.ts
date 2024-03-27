@@ -5,8 +5,8 @@ import { Seminaire} from '../models/site_models';
   selector: 'app-site',
   standalone: true,
   imports: [],
-  templateUrl: './site.component.html',
-  styleUrl: './site.component.scss'
+  templateUrl: './site_component.html',
+  styleUrl: './site_component.scss'
 })
 export class SiteComponent {
   @Input() seminaire!:Seminaire;
