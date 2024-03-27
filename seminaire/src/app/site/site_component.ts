@@ -11,7 +11,8 @@ import { CommonModule } from '@angular/common';
 })
 export class SiteComponent {
   @Input() seminaire!:Seminaire;
-  
 
-  
+}
+export class monApplicationComponent {
+  cheminImage = "../img/logo2.png";
 }

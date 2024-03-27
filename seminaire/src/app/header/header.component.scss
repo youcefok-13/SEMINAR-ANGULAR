@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #534e4e;
+    color: #fff;
+    padding: 1.5%;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    margin: 1%;
+}
+
+.seminaire {
+    border-bottom: 1px solid #ccc;
+    padding: 1%;
+    margin: 0.5% 0;
+}
+
+.seminaire h2 {
+    color: #534e4e;
+}
+
+.seminaire p {
+    margin: 0.5% 0;
+}
+
+.logo_a_droite {
+    display: flex;
+    justify-content: space-between; /* Pour répartir l'espace disponible également entre les éléments */
+    align-items: center; /* Pour aligner verticalement */
+}
+
+.logo_a_droite nav {
+    margin-left: auto; /* Pour pousser le menu vers la droite */
+}
+
+/* pour cacher le vrai bouton qui a été remplacé par une image de connexion*/
+.connexion-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.connexion-button img {
+    position: absolute;
+    top: 1%;
+    right: 4.5%;
+    width: 2.5%;
+}
+
+.connexion-button:hover img {
+    background-color: #c5c5c5; /* Couleur de fond au survol */
+}
+
+.favoris-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.favoris-button img {
+    position: absolute;
+    top: 5%;
+    right: 2.5%;
+    width: 1.7%;
+}
+
+.favoris-button:hover img {
+    background-color: #c5c5c5; /* Couleur de fond au survol */
+}
+
+.logo {
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    width: 5%;
+}
+
+
+nav ul {
+    top:-50px;
+    right: 125%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover > .sous-menu {
+    display: block;
+}
+
+nav ul .sous-menu {
+    display: none;
+    position: absolute;
+    background-color: #534e4e;
+}
+
+nav ul .sous-menu li {
+    display: block;
+}
+
+nav ul .sous-menu li a {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul .sous-menu li:hover {
+    background-color: #463e3e;
+}
+
+.option {
+    margin-top: 1%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.trier,
+.domaine {
+    margin-right: 20px;
+}
+
+select {
+    margin-left: 5px;
+}
+
+.logo_menu {
+    position: absolute;
+    right: 250%;
+    width: 175%;
+    bottom: 315%;
+}
+
+.logo_menu:hover {
+    background-color: #c5c5c5; /* Couleur de fond au survol */
+}
