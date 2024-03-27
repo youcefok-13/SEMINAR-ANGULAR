@@ -1,10 +1,8 @@
-
-<h2>{{ seminaire.titre | uppercase }}</h2>
-<p>Mis en ligne le {{seminaire.date  | date :'longDate'}}</p>
-<p>Intervenant:{{ seminaire.intervenant | titlecase }}</p>
-<p>Lieu : {{ seminaire.lieu }}</p>
-<p>Résume : {{ seminaire.resume }}</p>
-
-
-
-
+<div class="seminaire">
+    <h2>{{ seminaire.titre | uppercase }}</h2>
+    <p class="info">Mis en ligne le {{ seminaire.date | date :'longDate' }}</p>
+    <p class="info">Intervenant : {{ seminaire.intervenant | titlecase }}</p>
+    <p class="info">Lieu : {{ seminaire.lieu }}</p>
+    <p class="resume">Résumé : {{ seminaire.resume }}</p>
+  </div>
+  

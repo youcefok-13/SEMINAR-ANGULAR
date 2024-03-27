@@ -4,51 +4,61 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Séminaires</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
 </head>
 <body>
-<header>
-    <h1>Séminaires</h1>
-
-<div class="logo_a_droite">
-    <button class="connexion-button">
-        <img src="connexion.png" alt="Connexion">
-    </button>
-    <img class="logo" src="logo2.png" alt="Logo"> 
-    <button class="favoris-button" type="button" >
-        <img src="favoris.png" alt="Favoris">
-    </button>
-    <nav>
-        <ul>
-            <li class="menu-deroulant">
-                <a href="#"><img class="logo_menu" src="menu4.png" alt="Menu"></a>
-                <ul class="sous-menu">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Réalisations</a></li>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Contactez-nous</a></li>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="logo2.png" alt="Logo"> 
+            <h1 class="header-title">Séminaires</h1>
+            <nav>
+                <ul>
+                    <li class="menu-deroulant">
+                        <a href="#"><img class="logo_menu" src="menu4.png" alt="Menu"></a>
+                        <ul class="sous-menu">
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Réalisations</a></li>
+                            <li><a href="#">À propos</a></li>
+                            <li><a href="#">Contactez-nous</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-        </ul>
-    </nav>
-</div>
-</header>
-<div class="option">
-    <div class="trier">
-        <label for="monselect">Trié:</label>
-        <select class="monselect">
-            <option value="recent" selected>Date la plus récente</option>
-            <option value="ancien">Date la moins récente</option>
-            <option value="domaine">Domaine</option>
-        </select>
+            </nav>
+            <div class="header-buttons ms-auto">
+                <button class="connexion-button">
+                    <img src="connexion.png" alt="Connexion">
+                </button>
+            </div>
+        </div>
+    </header>
+    
+<div class="option bg-light py-3">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="trier">
+                    <label for="monselect" class="me-2">Trié :</label>
+                    <select class="form-select monselect">
+                        <option value="recent" selected>Date la plus récente</option>
+                        <option value="ancien">Date la moins récente</option>
+                        <option value="domaine">Domaine</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="Domaine text-md-end mt-3 mt-md-0">
+                    <label for="monselect2" class="me-2">Domaine :</label>
+                    <select class="form-select monselect2">
+                        <option value="recent" selected>Math</option>
+                        <option value="ancien">Physique</option>
+                        <option value="domaine">Domaine</option>
+                    </select>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="Domaine">
-        <label for="monselect2">Domaine:</label>
-        <select class="monselect2">
-            <option value="recent" selected>Math</option>
-            <option value="ancien">physique</option>
-            <option value="domaine">Domaine</option>
-        </select>
-    </div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
