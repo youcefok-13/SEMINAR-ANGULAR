@@ -1,1 +1,6 @@
-<app-seminaire-list></app-seminaire-list>
+<app-header></app-header>
+<ng-container *ngIf="isOnSeminairesRoute()">
+    <app-seminaire-list></app-seminaire-list>
+</ng-container>
+<router-outlet></router-outlet>
+  

@@ -1,21 +1,24 @@
 import { Component,OnInit, } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet,Router  } from '@angular/router';
 import { SiteComponent } from './site/site_component';
 import { CommonModule,DatePipe } from '@angular/common';
 import { SeminaireListComponent } from './seminaire-list/seminaire-list.component';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,SiteComponent,CommonModule,DatePipe,SeminaireListComponent ],
+  imports: [RouterOutlet,SiteComponent,CommonModule,DatePipe,SeminaireListComponent,HeaderComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent  {
 
-  ngOnInit(): void {
-    
+  constructor(private router: Router) {}
+
+  // AFFICHER LA LISTE DE SEMINAIRE SEULEMENT LORSQUE QUE L UTILISATEUR EST A LA PAGE DES SEMINAIRES
+  isOnSeminairesRoute(): boolean {
+    return this.router.url === '/seminaires';
   }
-
 }
 
