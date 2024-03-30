@@ -16,11 +16,20 @@ export const routes: Routes = [
       },
     {
          path: 'login',
-     component: LoginComponent },
+     component: LoginComponent 
+    },
      {
         path:'**',
         redirectTo:'/seminaires'
      }
+     {
+      path:'propos',
+      component:
+   }
+   {
+    path:'contact',
+    component:
+ }
   ];
   
 
