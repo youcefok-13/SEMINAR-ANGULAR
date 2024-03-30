@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 40px;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="form-container">
+                <h2 class="text-center mb-4">Inscription</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="username">Nom d'utilisateur:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Entrez votre nom d'utilisateur" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mot de passe:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_password">Confirmez le mot de passe:</label>
+                        <input type="password" class="form-control" id="confirm_password" placeholder="Confirmez votre mot de passe" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+                </form>
+                <div class="text-center mt-3">
+                    <p>Déjà inscrit? <a href="connexion">Connectez-vous</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<footer class="footer mt-3">
+    <!-- Contenu du footer -->
+</footer>
+</html>

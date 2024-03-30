@@ -4,11 +4,12 @@ import { SiteComponent } from './site/site_component';
 import { CommonModule,DatePipe } from '@angular/common';
 import { SeminaireListComponent } from './seminaire-list/seminaire-list.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,SiteComponent,CommonModule,DatePipe,SeminaireListComponent,HeaderComponent ],
+  imports: [RouterOutlet,SiteComponent,CommonModule,DatePipe,SeminaireListComponent,HeaderComponent,FooterComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

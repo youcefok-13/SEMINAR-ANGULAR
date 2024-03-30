@@ -1,3 +1,28 @@
-
+<div class="option bg-light py-3">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="trier">
+                    <label for="monselect" class="me-2">Trié :</label>
+                    <select class="form-select monselect">
+                        <option value="recent" selected>Date la plus récente</option>
+                        <option value="ancien">Date la moins récente</option>
+                        <option value="domaine">Domaine</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="Domaine text-md-end mt-3 mt-md-0">
+                    <label for="monselect2" class="me-2">Domaine :</label>
+                    <select class="form-select monselect2">
+                        <option value="recent" selected>Math</option>
+                        <option value="ancien">Physique</option>
+                        <option value="domaine">Domaine</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <app-site *ngFor="let seminaireElementOfArray of seminaires" [seminaire]="seminaireElementOfArray" ></app-site>
 
