@@ -1,10 +1,10 @@
-import { Component,OnInit, } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { RouterOutlet,Router  } from '@angular/router';
-import { SiteComponent } from './site/site_component';
+import { SiteComponent } from './Components/site/site_component';
 import { CommonModule,DatePipe } from '@angular/common';
-import { SeminaireListComponent } from './seminaire-list/seminaire-list.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { SeminaireListComponent } from './Components/seminaire-list/seminaire-list.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @Component({
   selector: 'app-root',

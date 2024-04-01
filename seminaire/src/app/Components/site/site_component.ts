@@ -1,5 +1,5 @@
 import { Component,OnInit,Input } from '@angular/core';
-import { Seminaire} from '../models/site_models';
+import { Seminaire} from '../../models/site_models';
 import { CommonModule } from '@angular/common';
 
 @Component({

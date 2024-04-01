@@ -1,5 +1,5 @@
-import { Component,OnInit } from '@angular/core';
-import { FormGroup, FormControl,FormsModule } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, FormsModule } from '@angular/forms';
 import { User } from '../user';
 import { CommonModule } from '@angular/common';
 
@@ -10,25 +10,23 @@ import { CommonModule } from '@angular/common';
   templateUrl: './inscription.component.html',
   styleUrl: './inscription.component.scss'
 })
+
 export class InscriptionComponent implements OnInit {
-  public registerForm: FormGroup = new FormGroup({
-    firstName: new FormControl(),
-    lastName: new FormControl(),
-    email: new FormControl(),
-    sendCatalog: new FormControl(true)
-  });
-   public user: User = new User();
+  public user: User = {
+    firstName: '', // Assurez-vous que firstName est initialisé avec une chaîne vide
+    lastName: '', // Assurez-vous que lastName est initialisé avec une chaîne vide
+    email: '', // Assurez-vous que email est initialisé avec une chaîne vide
+
+  };
 
   constructor() { }
 
   ngOnInit(): void {
-
+    // Initialisez d'autres propriétés ou effectuez d'autres actions nécessaires ici
   }
-  public saveData() {
-    console.log(this.registerForm);
-    console.log('valeurs: ', JSON.stringify(this.registerForm.value));
-    console.log('hello');
+
+  saveData() {
+    console.log('Valeurs:', this.user);
+    console.log('Hello');
   }
 }
-
-

@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import { Seminaire } from '../models/site_models';
+import { Seminaire } from '../../models/site_models';
 import { CommonModule } from '@angular/common';
 import { SiteComponent } from '../site/site_component';
 import { HeaderComponent } from '../header/header.component';
