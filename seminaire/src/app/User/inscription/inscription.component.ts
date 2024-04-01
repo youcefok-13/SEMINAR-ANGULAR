@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import { NgForm,FormsModule  } from '@angular/forms';
+import { FormGroup, FormControl,FormsModule } from '@angular/forms';
 import { User } from '../user';
 import { CommonModule } from '@angular/common';
 
@@ -10,17 +10,23 @@ import { CommonModule } from '@angular/common';
   templateUrl: './inscription.component.html',
   styleUrl: './inscription.component.scss'
 })
-export class InscriptionComponent implements OnInit{ 
+export class InscriptionComponent implements OnInit {
+  public registerForm: FormGroup = new FormGroup({
+    firstName: new FormControl(),
+    lastName: new FormControl(),
+    email: new FormControl(),
+    sendCatalog: new FormControl(true)
+  });
    public user: User = new User();
 
   constructor() { }
 
   ngOnInit(): void {
-  }
 
-  public saveData(registerForm: NgForm) {
-    console.log(registerForm.form);
-    console.log('valeurs: ', JSON.stringify(registerForm.value));
+  }
+  public saveData() {
+    console.log(this.registerForm);
+    console.log('valeurs: ', JSON.stringify(this.registerForm.value));
     console.log('hello');
   }
 }

@@ -11,7 +11,7 @@
     <div class="card">
         <div class="card-header text-white bg-info">S'enregistrer</div>
         <div class="card-body">
-          <form novalidate (ngSubmit)="saveData(registerForm)" #registerForm="ngForm">
+          <form novalidate (ngSubmit)="saveData()" #registerForm="ngForm">
             <div class="form-row">
               <div class="col-md-6 mb-3">
                 <label>Nom</label>
@@ -97,7 +97,14 @@
         </div>
       </div>
       
+      <hr>
 
+      <p> Dirty: {{ registerForm.dirty }} </p>
+      <p> Pristine: {{ registerForm.pristine }} </p>
+      <p> Valid: {{ registerForm.valid }} </p>
+      <p> InValid: {{ registerForm.invalid }} </p>
+      <p> Value: </p>
+      <pre>{{ registerForm.value | json  }} </pre>
 <footer class="footer mt-3">
     <!-- Contenu du footer -->
 </footer>
