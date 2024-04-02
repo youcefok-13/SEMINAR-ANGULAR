@@ -7,7 +7,7 @@ import { ProposComponent } from './Components/propos/propos.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { CreationComponent } from './Components/creation/creation.component';
 import { InscriptionComponent } from './User/inscription/inscription.component';
-import { NewUtilisateurComponent } from './new-seminaire/new-seminaire.component';
+import { NewSeminaireComponent } from './new-seminaire/new-seminaire.component';
 
 export const routes: Routes = [
     {
